@@ -71,7 +71,7 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Influx - Bilingual Technical Support Representative**")
+st.write("**Influx - Bilingual Technical Support Representative**")
 st.write("May 2021 - June 2022")
 st.write(
     """
@@ -83,7 +83,7 @@ related to hardware and software
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Freelance Web Designer and Developer**")
+st.write("**Freelance Web Designer and Developer**")
 st.write("Sept 2018 - Present")
 st.write(
     """
@@ -139,7 +139,7 @@ st.write("""
         
 - EFL (Teaching English as a Foreign Language) certificate
 - Web Frontend Certificate
-- Proficient in CSS, JavaScript, Bootstrap, WordPress, and React, Python, Flask and more!
+- Proficient in HTML, CSS, JavaScript, Bootstrap, WordPress, Wix, React, Python, Flask and more!
 - Strong communication skills with the ability to effectively communicate complex technical
 concepts to both technical and non-technical audiences
 - Fluent in Spanish      
