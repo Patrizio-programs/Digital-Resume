@@ -1,2 +1,3 @@
-command = "streamlit build app.py && static_site build app.py && mv app/* site/"
-publish = "site/"
+[build]
+  command = "pip install -r requirements.txt && streamlit run app.py"
+  publish = "Resume"
