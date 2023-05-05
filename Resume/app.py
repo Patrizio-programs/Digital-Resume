@@ -51,12 +51,8 @@ with col1:
 with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
-    st.download_button(
-        label=" 📄 Download Resume",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream",
-    )
+    file_path = os.path.join('assets', 'Resume.pdf')
+    st.markdown(download_link(file_path, 'Resume.pdf', 'Download Resume'), unsafe_allow_html=True)
     st.write("📫", EMAIL)
     
     
