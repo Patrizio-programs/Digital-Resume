@@ -46,12 +46,10 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
-st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 with open(resume_file, "rb") as pdf_file:
-PDFbyte = pdf_file.read()
+    PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
-
-
 
 
 # --- HERO SECTION ---
@@ -64,8 +62,10 @@ with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
     file_path = os.path.join('assets', 'Resume.pdf')
-st.markdown(download_link(file_path, 'Resume.pdf', 'Click here to download your resume!'), unsafe_allow_html=True)
-    st.write("📫", EMAIL)
+
+st.markdown(_link(file_path, 'Resume.pdf', 'Download Resume here'), unsafe_allow_html=True)
+
+st.write("📫", EMAIL)
     
     
     # --- SOCIAL LINKS ---
