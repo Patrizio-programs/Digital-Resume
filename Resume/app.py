@@ -1,6 +1,10 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
+import os
+
+os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
+
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "style.css"
