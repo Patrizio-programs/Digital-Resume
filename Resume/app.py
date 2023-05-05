@@ -2,7 +2,6 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
-
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "style.css"
 resume_file = current_dir / "assets" / "resume.pdf"
@@ -51,8 +50,7 @@ with col1:
 with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
-    file_path = os.path.join('assets', 'Resume.pdf')
-    st.markdown(download_link(file_path, 'Resume.pdf', 'Download Resume'), unsafe_allow_html=True)
+    st.markdown(download_link(resume_file, 'Resume.pdf', 'Download Resume'), unsafe_allow_html=True)
     st.write("📫", EMAIL)
     
     
