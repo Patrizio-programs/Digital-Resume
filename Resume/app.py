@@ -61,9 +61,9 @@ with col1:
 with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
-    file_path = os.path.join('assets', 'Resume.pdf')
+    file_path = os.path.join('assets', 'resume.pdf')
 
-st.markdown(_link(file_path, 'Resume.pdf', 'Download Resume here'), unsafe_allow_html=True)
+st.markdown(_link(file_path, 'Patrick_Medley_CV.pdf', 'Download Resume here'), unsafe_allow_html=True)
 
 st.write("📫", EMAIL)
     
