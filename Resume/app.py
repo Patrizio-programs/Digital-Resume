@@ -1,6 +1,19 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
+import base64
+import os
+
+
+
+def _link(file_path, download_filename, download_link_text):
+    """
+    Generates a link to download the file at the given file_path.
+    """
+    with open(file_path, 'rb') as f:
+        data = f.read()
+    b64 = base64.b64encode(data).decode()
+    return f'<a href="data:application/octet-stream;base64,{b64}" download="{download_filename}">{download_link_text}</a>'
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "style.css"
@@ -45,7 +58,7 @@ profile_pic = Image.open(profile_pic)
 col1, col2 = st.columns(2)
 with col1:
     st.image(profile_pic, width=230)
-    
+
 
 with col2:
     st.title(NAME)
