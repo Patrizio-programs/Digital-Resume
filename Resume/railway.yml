@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  app:
+    build:
+      context: .
+    env:
+      PORT: 8080
+    command: streamlit run app.py --server.port $PORT
+    ports:
+      - 8080:8080
