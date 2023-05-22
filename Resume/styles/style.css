@@ -4,6 +4,7 @@
         font-weight: 500;
     }
 
+  
     a:hover {
         color: #d33682 !important;
         text-decoration: none;
@@ -11,7 +12,28 @@
 
     ul {
         list-style-type: none;
+        color: white;
     }
+
+    img{
+        margin-right: 10px;
+    }
+
+    
+
+
+    @media (min-width: 780px) {
+        .m{
+            margin-left: 50px;
+        }
+      }
+
+
+    @media (max-width: 780px) {
+        .d-flex {
+          flex-direction: column;
+        }
+      }
 
     hr {
         margin-top: 0px;
@@ -37,4 +59,11 @@
     button:hover {
         background-color: #d33682 !important;
         color: white !important;
+    }
+
+    main{
+
+        
+        margin-left: 50px;
+        margin-right: auto;
     }
